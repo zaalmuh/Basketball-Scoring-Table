@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Basketball Scoring Table</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Basketball Scoring Table</h1>
+      <div class="row">
+        <h2>
+          Team Stats: <span id="totalPoints">0</span> Points <span id="totalAssists">0</span> Assists <span id="totalRebounds">0</span> Rebounds <span id="totalSteals">0</span> Steals
+          <span id="totalBlocks">0</span>
+          Blocks
+        </h2>
+      </div>
+      <div class="row mb-5">
+        <div class="col">
+          <div class="card-group">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Player 1</h5>
+                <div class="row">
+                  <div class="column">
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="btn btn-primary btn-sm" id="p1ft">+1</button>
+                      <button type="button" class="btn btn-info btn-sm" id="p12pt">+2</button>
+                      <button type="button" class="btn btn-success btn-sm" id="p13pt">+3</button>
+                      <button type="button" class="btn disabled text-dark btn-sm">Points</button>
+                    </div>
+                  </div>
+                  <div class="column mt-2">
+                    <button class="btn btn-secondary btn-sm" id="p1reb">+Rebound</button>
+                    <button class="btn btn-warning btn-sm" id="p1ast">+Assist</button>
+                  </div>
+                  <div class="column mt-2">
+                    <button class="btn btn-outline-primary btn-sm" id="p1stl">+Steal</button>
+                    <button class="btn btn-danger btn-sm" id="p1blk">+1 Block</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Player 2</h5>
+                <div class="row">
+                  <div class="column">
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="btn btn-primary btn-sm" id="p2ft">+1</button>
+                      <button type="button" class="btn btn-info btn-sm" id="p22pt">+2</button>
+                      <button type="button" class="btn btn-success btn-sm" id="p23pt">+3</button>
+                      <button type="button" class="btn disabled text-dark btn-sm">Points</button>
+                    </div>
+                  </div>
+                  <div class="column mt-2">
+                    <button class="btn btn-secondary btn-sm" id="p2reb">+Rebound</button>
+                    <button class="btn btn-warning btn-sm" id="p2ast">+Assist</button>
+                  </div>
+                  <div class="column mt-2">
+                    <button class="btn btn-outline-primary btn-sm" id="p2stl">+Steal</button>
+                    <button class="btn btn-danger btn-sm" id="p2blk">+Block</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Player 3</h5>
+                <div class="row">
+                  <div class="column">
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="btn btn-primary btn-sm" id="p3ft">+1</button>
+                      <button type="button" class="btn btn-info btn-sm" id="p32pt">+2</button>
+                      <button type="button" class="btn btn-success btn-sm" id="p33pt">+3</button>
+                      <button type="button" class="btn disabled text-dark btn-sm">Points</button>
+                    </div>
+                  </div>
+                  <div class="column mt-2">
+                    <button class="btn btn-secondary btn-sm" id="p3reb">+Rebound</button>
+                    <button class="btn btn-warning btn-sm" id="p3ast">+Assist</button>
+                  </div>
+                  <div class="column mt-2">
+                    <button class="btn btn-outline-primary btn-sm" id="p3stl">+Steal</button>
+                    <button class="btn btn-danger btn-sm" id="p3blk">+Block</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Player 4</h5>
+                <div class="row">
+                  <div class="column">
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="btn btn-primary btn-sm" id="p4ft">+1</button>
+                      <button type="button" class="btn btn-info btn-sm" id="p42pt">+2</button>
+                      <button type="button" class="btn btn-success btn-sm" id="p43pt">+3</button>
+                      <button type="button" class="btn disabled text-dark btn-sm">Points</button>
+                    </div>
+                  </div>
+                  <div class="column mt-2">
+                    <button class="btn btn-secondary btn-sm" id="p4reb">+Rebound</button>
+                    <button class="btn btn-warning btn-sm" id="p4ast">+Assist</button>
+                  </div>
+                  <div class="column mt-2">
+                    <button class="btn btn-outline-primary btn-sm" id="p4stl">+Steal</button>
+                    <button class="btn btn-danger btn-sm" id="p4blk">+Block</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Player 5</h5>
+                <div class="row">
+                  <div class="column">
+                    <div class="btn-group" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="btn btn-primary btn-sm" id="p5ft">+1</button>
+                      <button type="button" class="btn btn-info btn-sm" id="p52pt">+2</button>
+                      <button type="button" class="btn btn-success btn-sm" id="p53pt">+3</button>
+                      <button type="button" class="btn disabled text-dark btn-sm">Points</button>
+                    </div>
+                  </div>
+                  <div class="column mt-2">
+                    <button class="btn btn-secondary btn-sm" id="p5reb">+Rebound</button>
+                    <button class="btn btn-warning btn-sm" id="p5ast">+Assist</button>
+                  </div>
+                  <div class="column mt-2">
+                    <button class="btn btn-outline-primary btn-sm" id="p5stl">+Steal</button>
+                    <button class="btn btn-danger btn-sm" id="p5blk">+Block</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container team-1">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Points</th>
+              <th scope="col">Assists</th>
+              <th scope="col">Rebounds</th>
+              <th scope="col">Steals</th>
+              <th scope="col">Blocks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Player 1</td>
+              <td id="p1pts">0</td>
+              <td id="p1asts">0</td>
+              <td id="p1rebs">0</td>
+              <td id="p1stls">0</td>
+              <td id="p1blks">0</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Player 2</td>
+              <td id="p2pts">0</td>
+              <td id="p2asts">0</td>
+              <td id="p2rebs">0</td>
+              <td id="p2stls">0</td>
+              <td id="p2blks">0</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Player 3</td>
+              <td id="p3pts">0</td>
+              <td id="p3asts">0</td>
+              <td id="p3rebs">0</td>
+              <td id="p3stls">0</td>
+              <td id="p3blks">0</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Player 4</td>
+              <td id="p4pts">0</td>
+              <td id="p4asts">0</td>
+              <td id="p4rebs">0</td>
+              <td id="p4stls">0</td>
+              <td id="p4blks">0</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Player 5</td>
+              <td id="p5pts">0</td>
+              <td id="p5asts">0</td>
+              <td id="p5rebs">0</td>
+              <td id="p5stls">0</td>
+              <td id="p5blks">0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
